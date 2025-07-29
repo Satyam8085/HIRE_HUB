@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Find Jobs - HIREHUB</title>
+  <link rel="stylesheet" href="main.css" />
+  <link rel="stylesheet" href="find_job.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>HIREHUB</h1>
+      <nav>
+        <a href="index.html#home">Home</a>
+        <a href="find-jobs.html">Find Jobs</a>
+        <a href="categories.html">Categories</a>
+        <a href="post_job.html">Post Job</a>
+        <a href="contact.html">Contact</a>
+        <a href="login-register.html" class="btn btn-login">Login / Register</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="section" id="jobs">
+      <div class="container">
+        <h2>Featured Job Listings</h2>
+        <div class="job-grid">
+          <div class="job-card visible">
+            <h3>Senior Full Stack Developer</h3>
+            <p class="job-meta"><i class="fas fa-map-marker-alt"></i> Noida | <i class="fas fa-clock"></i> Full Time | <i class="fas fa-dollar-sign"></i> ₹100k - ₹150k</p>
+            <p class="job-description">Developing and maintaining web applications using modern frameworks...</p>
+            <button class="btn btn-secondary" onclick="applyJob('Senior Full Stack Developer')">Apply Now</button>
+          </div>
+
+          <div class="job-card visible">
+            <h3>Marketing Specialist</h3>
+            <p class="job-meta"><i class="fas fa-map-marker-alt"></i> Remote | <i class="fas fa-clock"></i> Full Time | <i class="fas fa-dollar-sign"></i> ₹60k - ₹80k</p>
+            <p class="job-description">Creating and executing marketing campaigns across various channels...</p>
+            <button class="btn btn-secondary" onclick="applyJob('Marketing Specialist')">Apply Now</button>
+          </div>
+
+          <div class="job-card visible">
+            <h3>UI/UX Designer</h3>
+            <p class="job-meta"><i class="fas fa-map-marker-alt"></i> Delhi | <i class="fas fa-clock"></i> Freelance | <i class="fas fa-dollar-sign"></i> ₹600/hr</p>
+            <p class="job-description">Designing intuitive and engaging user interfaces for web and mobile...</p>
+            <button class="btn btn-secondary" onclick="applyJob('UI/UX Designer')">Apply Now</button>
+          </div>
+
+          <div class="job-card">
+            <h3>Data Scientist</h3>
+            <p class="job-meta"><i class="fas fa-map-marker-alt"></i> Pune | <i class="fas fa-clock"></i> Full Time | <i class="fas fa-dollar-sign"></i> ₹110k - ₹160k</p>
+            <p class="job-description">Analyzing complex datasets to extract actionable insights...</p>
+            <button class="btn btn-secondary" onclick="applyJob('Data Scientist')">Apply Now</button>
+          </div>
+
+          <div class="job-card">
+            <h3>Customer Support Executive</h3>
+            <p class="job-meta"><i class="fas fa-map-marker-alt"></i> Bengaluru | <i class="fas fa-clock"></i> Full Time | <i class="fas fa-dollar-sign"></i> ₹30k - ₹40k</p>
+            <p class="job-description">Handle customer queries via chat, email, and calls. Ensure customer satisfaction...</p>
+            <button class="btn btn-secondary" onclick="applyJob('Customer Support Executive')">Apply Now</button>
+          </div>
+
+          <div class="job-card">
+            <h3>Content Writer</h3>
+            <p class="job-meta"><i class="fas fa-map-marker-alt"></i> Remote | <i class="fas fa-clock"></i> Part Time | <i class="fas fa-dollar-sign"></i> ₹500/hr</p>
+            <p class="job-description">Writing engaging blog posts, articles, and marketing content for various niches...</p>
+            <button class="btn btn-secondary" onclick="applyJob('Content Writer')">Apply Now</button>
+          </div>
+
+          <div class="job-card">
+            <h3>Android Developer</h3>
+            <p class="job-meta"><i class="fas fa-map-marker-alt"></i> Hyderabad | <i class="fas fa-clock"></i> Full Time | <i class="fas fa-dollar-sign"></i> ₹90k - ₹120k</p>
+            <p class="job-description">Develop and maintain Android applications with focus on performance and UX...</p>
+            <button class="btn btn-secondary" onclick="applyJob('Android Developer')">Apply Now</button>
+          </div>
+
+          <div class="job-card">
+            <h3>Finance Analyst</h3>
+            <p class="job-meta"><i class="fas fa-map-marker-alt"></i> Mumbai | <i class="fas fa-clock"></i> Full Time | <i class="fas fa-dollar-sign"></i> ₹70k - ₹100k</p>
+            <p class="job-description">Assist with budgeting, forecasting, and financial reporting for business units...</p>
+            <button class="btn btn-secondary" onclick="applyJob('Finance Analyst')">Apply Now</button>
+          </div>
+        </div>
+
+        <div class="text-center">
+          <button class="btn-link" onclick="showAllJobs(this)">View All Jobs <i class="fas fa-arrow-right"></i></button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section about">
+          <h3>About HIREHUB</h3>
+          <p>HIREHUB is your go-to platform for finding and posting jobs. We connect talented individuals with leading companies.</p>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+        <div class="footer-section contact-info">
+          <h3>Contact Info</h3>
+          <p><i class="fas fa-map-marker-alt"></i> 123 HIREHUB , Delhi</p>
+          <p><i class="fas fa-phone"></i> +91 0000000000 </p>
+          <p><i class="fas fa-envelope"></i> info@HIREHUB.com</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        &copy; 2025 HIREHUB. All rights reserved.
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    function applyJob(title) {
+      alert("You have applied for: " + title);
+    }
+
+    function showAllJobs(button) {
+      const cards = document.querySelectorAll('.job-card');
+      cards.forEach(card => card.classList.add('visible'));
+      button.style.display = 'none';
+    }
+  </script>
+</body>
+</html>

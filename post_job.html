@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Post a Job | HIREHUB</title>
+  <link rel="stylesheet" href="main.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"/>
+  <style>
+    .post-job-container {
+      max-width: 800px;
+      margin: 3rem auto;
+      background: #ffffff;
+      padding: 2rem 2.5rem;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
+      font-family: Verdana, Geneva, Tahoma, sans-serif  ;
+    }
+
+    .post-job-container h2 {
+      text-align: center;
+      margin-bottom: 1.5rem;
+      color: #0077ff;
+    }
+
+    .post-job-container form {
+      display: grid;
+      gap: 1.2rem;
+    }
+
+    .post-job-container input,
+    .post-job-container textarea,
+    .post-job-container select {
+      width: 100%;
+      padding: 0.9rem 1rem;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+      font-size: 1rem;
+    }
+
+    .post-job-container textarea {
+      resize: vertical;
+    }
+
+    .post-job-container button {
+      padding: 0.9rem;
+      background: #0077ff;
+      color: #fff;
+      border: none;
+      border-radius: 6px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .post-job-container button:hover {
+      background: #005fd4;
+    }
+
+    @media (max-width: 600px) {
+      .post-job-container {
+        padding: 1.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>HIREHUB</h1>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="find_job.html">Find Jobs</a>
+        <a href="categories.html">Categories</a>
+        <a href="post_job.html" class="active">Post Job</a>
+        <a href="contact.html">Contact</a>
+        <a href="login-register.html" class="btn btn-login">Login / Register</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="post-job-container">
+      <h2><i class="fas fa-briefcase"></i> Post a New Job</h2>
+      <form>
+        <input type="text" placeholder="Job Title" required />
+        <input type="text" placeholder="Company Name" required />
+        <input type="text" placeholder="Location (e.g., Delhi, Remote)" required />
+        
+        <select required>
+          <option value="">Select Job Type</option>
+          <option>Full Time</option>
+          <option>Part Time</option>
+          <option>Freelance</option>
+          <option>Internship</option>
+        </select>
+
+        <input type="text" placeholder="Salary Range (e.g., ₹80k – ₹120k)" required />
+        <textarea rows="6" placeholder="Job Description (responsibilities, requirements, benefits)" required></textarea>
+        <input type="email" placeholder="Contact Email" required />
+
+        <button type="submit">Post Job</button>
+      </form>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section about">
+          <h3>About HIREHUB</h3>
+          <p>HIREHUB is your go-to platform for finding and posting jobs. We connect talented individuals with leading companies.</p>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+        <div class="footer-section contact-info">
+          <h3>Contact Info</h3>
+          <p><i class="fas fa-map-marker-alt"></i> 123 HIREHUB, Delhi</p>
+          <p><i class="fas fa-phone"></i> +91 0000000000</p>
+          <p><i class="fas fa-envelope"></i> info@HIREHUB.com</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        &copy; 2025 HIREHUB. All rights reserved.
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>

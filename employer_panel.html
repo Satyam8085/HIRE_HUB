@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Employer Panel | HIREHUB</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"/>
+  <style>
+    body {
+      background-color: #f5f8fb;
+      font-family: Georgia, 'Times New Roman', Times, serif
+      margin: 0;
+      padding: 0;
+    }
+
+    .panel-wrapper {
+      max-width: 1000px;
+      margin: 3rem auto;
+      background: #ffffff;
+      padding: 2.5rem;
+      border-radius: 16px;
+      box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+    }
+
+    .panel-header {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      margin-bottom: 2.5rem;
+      border-bottom: 2px solid #28a74533;
+      padding-bottom: 1rem;
+    }
+
+    .panel-header i {
+      font-size: 2.5rem;
+      color: #28a745;
+    }
+
+    .panel-header h2 {
+      font-size: 1.8rem;
+      color: #333;
+      margin: 0;
+    }
+
+    .panel-section {
+      margin-bottom: 2.5rem;
+    }
+
+    .panel-section h3 {
+      font-size: 1.4rem;
+      margin-bottom: 1rem;
+      color: #28a745;
+    }
+
+    .panel-section ul {
+      list-style: none;
+      padding: 0;
+      display: grid;
+      gap: 1rem;
+    }
+
+    .panel-section ul li a {
+      display: flex;
+      align-items: center;
+      background: #e9f7ef;
+      padding: 1rem 1.2rem;
+      border-radius: 10px;
+      font-size: 1rem;
+      color: #333;
+      text-decoration: none;
+      box-shadow: 0 4px 10px rgba(40, 167, 69, 0.08);
+      transition: background 0.3s, transform 0.2s;
+    }
+
+    .panel-section ul li a i {
+      margin-right: 12px;
+      font-size: 1.1rem;
+      color: #28a745;
+      min-width: 20px;
+    }
+
+    .panel-section ul li a:hover {
+      background: #c7eed8;
+      transform: translateY(-2px);
+    }
+
+    .panel-section ul li a.active {
+      background-color: #b8e0c8;
+      font-weight: 600;
+    }
+
+    @media (max-width: 768px) {
+      .panel-wrapper {
+        margin: 1.5rem;
+        padding: 2rem;
+      }
+
+      .panel-header h2 {
+        font-size: 1.5rem;
+      }
+
+      .panel-section h3 {
+        font-size: 1.2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="panel-wrapper">
+    <div class="panel-header">
+      <i class="fas fa-building"></i>
+      <h2>Employer Panel</h2>
+    </div>
+
+    <div class="panel-section">
+      <h3>Recruitment Tools</h3>
+      <ul>
+        <li><a href="#" data-action="Manage Posted Jobs"><i class="fas fa-briefcase"></i> Manage Posted Jobs</a></li>
+        <li><a href="#" data-action="Review Applicants"><i class="fas fa-user-friends"></i> Review Applicants</a></li>
+        <li><a href="#" data-action="Post a New Job"><i class="fas fa-plus-circle"></i> Post a New Job</a></li>
+        <li><a href="#" data-action="Messages"><i class="fas fa-envelope-open-text"></i> Messages</a></li>
+      </ul>
+    </div>
+
+    <div class="panel-section">
+      <h3>Account Controls</h3>
+      <ul>
+        <li><a href="#" data-action="View Analytics"><i class="fas fa-chart-line"></i> View Analytics</a></li>
+        <li><a href="#" data-action="Company Profile Settings"><i class="fas fa-user-cog"></i> Company Profile Settings</a></li>
+        <li><a href="#" id="logout"><i class="fas fa-sign-out-alt"></i> Logout</a></li>
+      </ul>
+    </div>
+  </div>
+</body>
+</html>
